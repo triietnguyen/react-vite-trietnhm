@@ -27,7 +27,7 @@
     border-radius: 5px;       /* Optional: Bo tròn góc của viền */
     background-color: #f9f9f9; /* Optional: Thêm màu nền nhẹ để làm nổi viền */
     width: 500px;
-    height: 50px;
+    height: 100%;
 }
 
 .todo-image {
@@ -62,4 +62,9 @@
     .logo {
       animation: logo-spin infinite 20s linear;
     }
+  }
+
+  .todo-item{
+    display: flex;
+    justify-content:space-between
   }
