@@ -27,7 +27,6 @@
     border-radius: 5px;       /* Optional: Bo tròn góc của viền */
     background-color: #f9f9f9; /* Optional: Thêm màu nền nhẹ để làm nổi viền */
     width: 500px;
-    height: 100%;
 }
 
 .todo-image {
