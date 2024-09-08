@@ -1,0 +1,65 @@
+.todo-title {
+    font-size: 20px;
+    color: orange;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* Optional: Nếu bạn muốn container chiếm toàn bộ chiều cao màn hình để căn giữa theo chiều dọc */
+    height: 100vh; 
+}
+
+.todo-new {
+    display: flex;            /* Đặt chế độ hiển thị là flexbox */
+    align-items: center;      /* Căn giữa theo chiều dọc */
+    margin-bottom: 10px;      /* Thêm khoảng cách dưới để tách biệt với danh sách công việc */
+    margin-top: 10px;         /* Thêm khoảng cách trên để tách biệt với tiêu đề */
+}
+
+.todo-data {
+    display: flex;            /* Đặt chế độ hiển thị là flexbox */
+    flex-direction: column;   /* Sắp xếp các công việc theo cột */
+    justify-content: center;  /* Căn giữa các công việc theo chiều dọc */
+    border: 1px solid black;  /* Thêm viền đen dày 2px quanh phần tử */
+    padding: 10px;            /* Thêm khoảng cách bên trong để nội dung không dính sát viền */
+    border-radius: 5px;       /* Optional: Bo tròn góc của viền */
+    background-color: #f9f9f9; /* Optional: Thêm màu nền nhẹ để làm nổi viền */
+    width: 500px;
+    height: 50px;
+}
+
+.todo-image {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
