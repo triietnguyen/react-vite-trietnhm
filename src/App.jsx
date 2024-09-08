@@ -20,9 +20,15 @@ const App = () => {
     setTodoList([...todoList, newTodo])
   }
 
+  const deleteTodo = (id)=>{
+    const newTodo = todoList.filter(item => item.id !==id)
+    setTodoList(newTodo)
+  }
+
   function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
+  
 
 
   // addNewTodo();
@@ -41,22 +47,9 @@ const App = () => {
         :
         <TodoData
           todoList={todoList}
+          deleteTodo={deleteTodo}
         />
       }
-      {/* { 
-        todoList.length > 0 &&
-        <TodoData
-        todoList={todoList}
-      />
-      }
-      
-      {
-      todoList.length === 0 && 
-        <div className='todo-image'>
-          <img src={reactLogo} className='logo'></img>
-        </div>
-      } */}
-
     </div>
   )
 }
