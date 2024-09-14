@@ -1,3 +1,4 @@
+
 const TodoData = (props) => {
     const {todoList, deleteTodo} = props
 
@@ -22,4 +23,4 @@ const TodoData = (props) => {
     )
 }
 
-export default TodoData
+export default TodoData;
