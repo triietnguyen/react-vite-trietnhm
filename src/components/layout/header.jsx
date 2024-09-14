@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
   return (
     <ul>
       <li>
-        <Link a className="active" to="/">
+        <NavLink a to="/">
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link a to="/users">
+        <NavLink a to="/users">
           Users
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link a to="/products">
+        <NavLink a to="/products">
           Products
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );
